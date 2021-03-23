@@ -42,10 +42,14 @@ header .nav-menu, header a:hover {
 }
 
 .top-section {
-  margin: auto;
+  margin: 15px auto;
   width: 800px;
-  padding: 10px;
+  padding: 15px;
   text-align: center;
+  border-width: 5px;
+  border-color: #fbdb4a;
+  border-style: solid;
+  border-radius: 10%;
 }
 
 .top-text {
