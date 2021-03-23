@@ -9,8 +9,8 @@ body {
 
 .avatar{
     border-radius: 50%;
-    height: 90px;
-    width: 90px;
+    height: 150px;
+    width: 150px;
 }
 
 a {
@@ -19,39 +19,59 @@ a {
  padding: 0.3em;
 }
 
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
+
 header {
-      
     display:flex;
     background-color: #fbdb4a;
-    padding: 2em;
     justify-content: space-between;
+    max-width: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    margin: auto;
     
-    .nav-menu{
-        padding-top: 25px;
+    .nav-menu, a {
+       padding-top: 75px;
+       padding-right: 25px;
+       font-weight: normal;
+       
+        
     }
+
+    .nav-menu, a:hover{
+        color: rgb(97, 147, 160);
+        font-weight: bold;
+    }
+
+
 }
 
-.hero-section{
-    display: flex;
-    padding: 2em;
-    
-    
-    .hero-image{
-     width: 50%;
-     margin: 1em;
-    }
-    
 
+.top-section{
+    margin: auto;
+    width: 800px;
+    padding: 10px;
+    text-align: center;
+
+    
+    }
+
+.top-text{
+    animation: yourAnimation 2s forwards 0s ease-in-out;
 }
 
 
 
+// Keyframes
+@keyframes yourAnimation{
+    0%{
+        transform: translateX(-10%);
+        opacity: 0;
+        }
+    100%{
+        transform: rotate(xx) translateX(0);
+        opacity: 1;
+        }
+}
 
 
 
