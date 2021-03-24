@@ -4,6 +4,8 @@ body {
   font-family: 'Montserrat', sans-serif;
   width: 100%;
   min-width: 485px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 h1 {
@@ -24,6 +26,7 @@ li {
 span {
   font-family: 'Sacramento', cursive, sans-serif;
   font-size: 50px;
+  font-weight: bold;
 }
 
 header {
@@ -43,10 +46,11 @@ header {
 header .avatar {
   height: 150px;
   width: 150px;
+  padding-left: 25px;
 }
 
 header nav {
-  padding-top: 50px;
+  padding-top: 65px;
   padding-right: 25px;
 }
 
@@ -68,9 +72,12 @@ header a:hover {
   padding: 0;
   margin: 0;
   font-weight: bold;
+  text-shadow: 2px 2px #fbdb4a;
 }
 
 .top-section {
+  padding: 0;
+  margin: 0;
   background-image: url("/assets/j-kosinska-RE-8WswW95o-unsplash.jpg");
   background-repeat: no-repeat;
   display: -webkit-box;
@@ -84,21 +91,29 @@ header a:hover {
   text-align: center;
 }
 
+.top-section .top-right {
+  padding: 50px;
+}
+
 .middle-section {
-  width: 80%;
+  width: 75%;
   text-align: center;
-  margin: auto;
-  padding: 15px;
+  margin: 50px auto auto auto;
+  padding: 0px;
 }
 
 .mid-top {
   padding: 15px;
-  margin: auto;
+  font-size: larger;
 }
 
 .mid-bottom {
-  padding: 15px;
-  margin: auto;
+  padding: 50px;
+  border-style: solid;
+  border-color: gray;
+  border-width: 2px;
+  background-image: url("/assets/neonbrand-z3kBG5xIhjo-unsplash.jpg");
+  background-size: cover;
 }
 
 @-webkit-keyframes yourAnimation {
