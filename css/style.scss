@@ -70,7 +70,7 @@ font-family: 'Sacramento', cursive;
 padding: 0;
 margin: 0;
 font-weight: bold;
-text-shadow:  2px 2px #fbdb4a;
+
 }
 .top-section{
     padding: 0;
@@ -88,12 +88,7 @@ text-shadow:  2px 2px #fbdb4a;
     }
     
 }
-    
-   
-
-
-
-
+ 
 .middle-section {
     
     
@@ -110,18 +105,45 @@ text-shadow:  2px 2px #fbdb4a;
 }
 .mid-bottom{
     padding: 50px;
-    border-style:solid;
-    border-color:gray;
-    border-width: 2px;
     background-image:url('/assets/neonbrand-z3kBG5xIhjo-unsplash.jpg');
-    
     background-size:cover;
-    
-    
-    
-   
+    border-radius: 5%;
+    background-position-y: 25%;
+}
+.the-why{
+   display:inline-block;
+    text-align:left;
 }
 
+.my-services{
+    width: 75%;
+    text-align:center;
+    padding: 15px;
+    margin:auto;
+    
+    
+    .services-box{
+        display:flex;
+        
+        
+        .box-1 {
+            background-color: #dbdbdb;
+            padding: 1em;
+            max-width: 25%;           
+            
+            }
+
+        .box-2 {
+            background-color: #d6d4d6;
+            padding: 1em;
+            max-width: 25%;
+            
+            
+            
+            
+            }
+    }
+}
 
 
 
