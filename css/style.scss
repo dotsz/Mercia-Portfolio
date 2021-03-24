@@ -124,7 +124,11 @@ font-weight: bold;
     
     .services-box{
         display:flex;
-        
+        img {
+            width: 50px;
+            height: 50px;
+            padding: 2px;
+        }
         
         .box-1 {
             background-color: #dbdbdb;
