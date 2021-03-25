@@ -17,7 +17,7 @@ h1 {
 
 h2 {
   padding-left: 1em;
-  text-shadow: 2px 2px bisque;
+  text-shadow: 2px 2px #fbdb4a;
 }
 
 a {
@@ -112,10 +112,19 @@ header a:hover {
 }
 
 .middle-section {
-  width: 75%;
+  width: 100%;
   text-align: center;
   margin: 50px auto auto auto;
   padding: 0px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .mid-top {
@@ -123,14 +132,30 @@ header a:hover {
   font-size: larger;
 }
 
+.mid-top p {
+  max-width: 50%;
+  width: 400px;
+  margin: auto;
+}
+
 .mid-bottom {
-  padding: 50px;
   background-image: url("/assets/j-kosinska-RE-8WswW95o-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
   background-attachment: fixed;
+}
+
+.mid-bottom .container {
+  max-width: 40%;
+  width: 600px;
+  margin: 50px auto;
+  height: 50%;
+  padding: 15px;
   border-radius: 2%;
+  background-color: #e6e4e4;
+  -webkit-box-shadow: 1px 1px #969696;
+          box-shadow: 1px 1px #969696;
 }
 
 .the-why {
@@ -168,29 +193,28 @@ header a:hover {
       -ms-flex: 0 0 200px;
           flex: 0 0 200px;
   margin: 10px;
+  background-color: #e6e4e4;
+  -webkit-box-shadow: 1px 1px #969696;
+          box-shadow: 1px 1px #969696;
+}
+
+.my-services .services-box .box-1:hover, .my-services .services-box .box-2:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .my-services .services-box .box-1 {
   border-radius: 2%;
-  background-image: url("/assets/j-kosinska-RE-8WswW95o-unsplash.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
 }
 
 .my-services .services-box .box-2 {
   border-radius: 2%;
-  background-image: url("/assets/j-kosinska-RE-8WswW95o-unsplash.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
 }
 
 .pricing-and-services {
   text-align: center;
   padding: 10px;
-  margin: 10px;
-  width: 100%;
+  margin: 15px 0;
   background-image: url("/assets/j-kosinska-RE-8WswW95o-unsplash.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -217,19 +241,65 @@ header a:hover {
 .pricing-container div {
   padding-right: 25px;
   margin: 5px;
-  width: 250px;
+  width: 180px;
   text-align: left;
+  background-color: #e6e4e4;
+  border-radius: 5%;
+  -webkit-box-shadow: 2px 2px #969696;
+          box-shadow: 2px 2px #969696;
 }
 
 .pricing-container div p {
   font-weight: bold;
   margin-left: -15px;
-  text-shadow: 1px 1px cadetblue;
 }
 
 .pricing-container div li {
+  list-style: square;
   margin-left: -15px;
+  margin-bottom: 2px;
   font-size: xx-small;
+}
+
+.why-work-with-mercia {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+}
+
+.why-work-with-mercia .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.why-work-with-mercia .container .wwwm-left {
+  padding-top: 50px;
+  width: 300px;
+}
+
+.why-work-with-mercia .container .wwwm-left p {
+  text-align: left;
+  font-size: 20px;
+}
+
+.why-work-with-mercia .container .wwwm-right {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 350px;
+          flex: 0 0 350px;
+}
+
+.why-work-with-mercia .container .wwwm-right img {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  margin: 10px;
+  border: 2px solid black;
 }
 
 @-webkit-keyframes yourAnimation {

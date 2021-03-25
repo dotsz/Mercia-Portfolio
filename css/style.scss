@@ -1,6 +1,7 @@
 
 
 body {
+    
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
@@ -19,7 +20,7 @@ h1 {
 }
 h2 {
     padding-left:1em;  
-    text-shadow: 2px 2px bisque;
+    text-shadow: 2px 2px #fbdb4a;
     
 }
 
@@ -69,6 +70,7 @@ header {
         color:white;
         text-shadow: 1px 1px black;
         
+        
     }
 
 }
@@ -105,32 +107,50 @@ font-weight: bold;
     }
     .top-text{
         animation: yourAnimation 1.5s forwards 0s ease-in-out;
+        
     }
 }
  
 .middle-section {
     
     
-    width: 75%;
+    width: 100%;
     text-align: center;
     margin: 50px auto auto auto;
     padding: 0px;
-    
+    align-content:center;
+    display:flex;
+    flex-direction:column;
   }
 .mid-top{
     padding: 15px;
     font-size: larger;
-    
+    p {
+        max-width: 50%;
+        width: 400px;
+        margin: auto;
+        
+    }
 }
+
 .mid-bottom{
-    padding: 50px;
+    
     background-image:url('/assets/j-kosinska-RE-8WswW95o-unsplash.jpg');
     background-repeat: no-repeat;
     background-size:cover;
     height: 100%;
     background-attachment: fixed;
-    border-radius: 2%;
     
+       .container {
+        max-width: 40%;
+        width: 600px;
+        margin: 50px auto;
+        height: 50%;
+        padding: 15px;
+        border-radius: 2%;
+        background-color: rgb(230, 228, 228);  
+        box-shadow: 1px 1px rgb(150, 150, 150);   
+       }
 }
 .the-why{
    display:inline-block;
@@ -160,27 +180,24 @@ font-weight: bold;
         .box-1, .box-2 {
             padding: 10px;
             flex: 0 0 200px;
-            margin: 10px;                
-        }
+            margin: 10px;   
 
+            background-color: rgb(230, 228, 228);  
+            box-shadow: 1px 1px rgb(150, 150, 150);   
+                    
+        }
+        .box-1:hover, .box-2:hover{
+            transform:scale(1.1);
+        }
         .box-1 {
             
             border-radius: 2%; 
-            background-image:url('/assets/j-kosinska-RE-8WswW95o-unsplash.jpg');
-            background-repeat: no-repeat;
-            background-size:cover;
-            
-            background-attachment: fixed;
-            
+
             }
         .box-2 {
                    
                 border-radius: 2%;   
-                background-image:url('/assets/j-kosinska-RE-8WswW95o-unsplash.jpg');
-                background-repeat: no-repeat;
-                background-size:cover;
-   
-                background-attachment: fixed;   
+
             }
         
         
@@ -192,8 +209,7 @@ font-weight: bold;
 .pricing-and-services{
     text-align:center;
     padding: 10px;
-    margin: 10px;
-    width: 100%;
+    margin: 15px 0;
     background-image:url('/assets/j-kosinska-RE-8WswW95o-unsplash.jpg');
     background-repeat:no-repeat;
     background-attachment: fixed;
@@ -210,26 +226,59 @@ font-weight: bold;
     justify-content:center;
     flex-wrap:wrap;
 
+
     div {
         padding-right: 25px;
-        
         margin: 5px;
-        
-        width: 250px;
+        width: 180px;
         text-align:left;
+        background-color:rgb(230, 228, 228);
+        border-radius:5%;
+        box-shadow: 2px 2px rgb(150, 150, 150);
         p {
             font-weight: bold;
             margin-left: -15px;
-            text-shadow:1px 1px cadetblue;
+        
         }
         li {
+            list-style:square;
             margin-left: -15px;
+            margin-bottom: 2px;
             font-size: xx-small;
             
         }
     }
 }
+.why-work-with-mercia{
+    align-content:center;
+    text-align:center;
+    
+    .container {
+        display:flex;
+        justify-content:center; 
+        flex-wrap:wrap;
+        .wwwm-left {
+            padding-top: 50px;
+            width: 300px;
 
+            p   {
+                text-align:left;
+                font-size:20px;
+                
+            }
+        }
+        .wwwm-right { 
+            flex: 0 0 350px;
+                img {
+                width: 350px;
+                height: 350px;
+                border-radius: 50%;
+                margin: 10px;
+                border: 2px solid black;
+            }
+        }
+    }
+}
 
 
 
