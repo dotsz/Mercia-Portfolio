@@ -318,12 +318,17 @@ header a:hover {
   
   -ms-flex-line-pack: center;
   align-content: center;
-  text-align: center;
-  
-  
-  
+  text-align: center;  
+  padding: 10px;
+  margin: 10px;
 }
+.contactform { 
 
+  align-content: center;
+  text-align: center;  
+  padding: 10px;
+  margin: 10px;
+}
 
 
 @-webkit-keyframes yourAnimation {
