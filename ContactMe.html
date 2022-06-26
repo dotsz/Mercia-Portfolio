@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet"> 
+
+</head>
+<body>
+
+<header id="header">  
+        <div>
+            <a href="#"> <img class="main-logo" src="/assets/brand-logo-transparent-bg.png" alt="logo-with-link"> </a> 
+        </div>
+        <nav>
+            <a href="index.html">< Go Back </a>
+        </nav>
+</header>
+
+    <div class="contactform">
+        <form name="contact" method="POST" data-netlify="true" onSubmit="submit">
+           
+           
+            <label>Name <input type="text" name="name" /></label>
+            <label>Email <input type="email" name="email" /></label>
+            <label>Message <textarea name="Message" id="message" cols="20" rows="15"></textarea></label>
+            <button type="submit">Submit</button>
+            
+        </form>
+    </div>
+</body>
+</html>

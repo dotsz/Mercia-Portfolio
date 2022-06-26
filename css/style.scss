@@ -19,13 +19,13 @@ body {
 h1 {
 
     font-family: 'Sacramento', cursive, sans-serif;
-    text-shadow:1px 1px #fbdb4a;
+    text-shadow: 1px 1px lightgoldenrodyellow;
     font-size: 50px;
     padding-top: 1em;
 }
 h2 {
     padding-left: 1em;  
-    text-shadow: 2px 2px #fbdb4a;
+    text-shadow: 2px 2px lightgoldenrodyellow;
     
 }
 
@@ -46,9 +46,9 @@ span {
 
 header {
     display:flex;
-    background-color: #fbdb4a;
+    background-color: #fafad2;
     justify-content: space-between;
-    
+    width: 100%;
     
     
     .main-logo {
@@ -295,7 +295,41 @@ header {
         }
     }
 }
+.the-easy-process {
+  
+    -ms-flex-line-pack: center;
+    align-content: center;
+    text-align: center;  
+    padding: 10px;
+    margin: 10px;
+  }
+.contactform {
+background-color: lightgoldenrodyellow;
+border: 1px solid black;
+border-radius: 5px;
+width: auto;
+padding: 5px;
+margin-left: 10em;
+margin-right: 10em;
+margin-top:2em;
+margin-bottom: 2em;
 
+input[type=text], input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    resize: vertical;
+  }
+
+  
+ 
+  
+
+}
 
 
 
